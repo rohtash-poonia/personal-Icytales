@@ -1,0 +1,786 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/36321e71-3d0e-4cf6-a67a-85c228137904";
+const imgHeaderMagnifyingglassPng = `${assetPathPrefix}/2d937.png`;
+const imgHeaderCartPng = `${assetPathPrefix}/e3551.png`;
+const imgLogo = `${assetPathPrefix}/abd5a.png`;
+const img153 = `${assetPathPrefix}/de89b.png`;
+const img154 = `${assetPathPrefix}/48389.png`;
+const img155 = `${assetPathPrefix}/ae3af.png`;
+const img156 = `${assetPathPrefix}/9b0cc.png`;
+const imgShopGridiconPng = `${assetPathPrefix}/947c7.png`;
+const imgShopListiconPng = `${assetPathPrefix}/bb7b8.png`;
+const imgOptions = `${assetPathPrefix}/a2eab.png`;
+const imgBestImage1Jpg = `${assetPathPrefix}/62343.png`;
+const imgBestImage3Jpg = `${assetPathPrefix}/158e8.png`;
+const imgFooterImagePng = `${assetPathPrefix}/44291.png`;
+const imgLogo1 = `${assetPathPrefix}/1136d.png`;
+
+export default function ShopLayout2() {
+  return (
+    <div className="bg-gradient-to-r from-white relative size-full to-white" data-node-id="1:2124" data-name="Shop Layout 2">
+      <div className="absolute h-[467px] left-0 right-0 top-[114px]" data-node-id="1:2125" data-name="Section">
+        <div className="absolute inset-0 opacity-65" data-node-id="1:2126" style={{ backgroundImage: "linear-gradient(140.00000106463986deg, rgb(239, 215, 239) 8%, rgb(245, 249, 252) 40%, rgb(248, 234, 225) 66%, rgb(234, 248, 249) 91%)" }} data-name="Gradient" />
+        <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Berkshire_Swash:Regular'] h-[80px] justify-center leading-[0] left-[calc(50%+0.2px)] not-italic text-[#0f0200] text-[80px] text-center top-[190px] w-[530.457px]" data-node-id="1:2127">
+          <p className="leading-[80px]">Shop Layout 02</p>
+        </div>
+        <div className="-translate-x-1/2 absolute bg-white h-[52px] left-1/2 overflow-clip rounded-[35px] shadow-[0px_2px_73px_2px_rgba(0,0,0,0.05)] top-[265px] w-[199.59px]" data-node-id="1:2128" data-name="Background+Shadow">
+          <a className="-translate-x-1/2 absolute block cursor-pointer h-[17px] left-[calc(50%-38.68px)] top-[17px] w-[52.22px]" data-node-id="1:2129" data-name="243">
+            <div className="-translate-x-1/2 absolute h-[18px] left-[calc(50%-1.68px)] top-[-1px] w-[48.86px]" data-node-id="1:2130" data-name="Container">
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[20px] justify-center leading-[0] left-[calc(50%+0.17px)] text-[#f83d8e] text-[18px] text-center top-[9px] w-[49.21px]" data-node-id="1:2131" role="link" style={{ fontVariationSettings: '"wdth" 100' }} tabIndex="0">
+                <p className="cursor-pointer leading-[18px]">Home</p>
+              </div>
+            </div>
+          </a>
+          <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[18px] justify-center leading-[0] left-[calc(50%+3.23px)] text-[#0f0200] text-[18px] text-center top-[25px] w-[5.608px]" data-node-id="1:2132" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="leading-[18px]">/</p>
+          </div>
+          <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[18px] justify-center leading-[0] left-[calc(50%+43.61px)] text-[#0f0200] text-[18px] text-center top-[25px] w-[43.05px]" data-node-id="1:2133" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="leading-[18px]">Shop</p>
+          </div>
+        </div>
+      </div>
+      <div className="absolute h-[70px] left-[251.5px] right-[251.5px] top-[22px]" data-node-id="1:2134" data-name="150">
+        <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[32px] left-[calc(50%+92.5px)] top-1/2 w-[532.28px]" data-node-id="1:2135" data-name="List">
+          <div className="absolute h-[32px] left-0 right-[457.42px] top-0" data-node-id="1:2136" data-name="12">
+            <a className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[17px] justify-center leading-[0] left-[calc(50%-5.87px)] text-[#0f0200] text-[16px] text-center top-[15.5px] w-[47.123px]" href="https://www.figma.com/design/5WvY9fet6wwPyvtxlkeo0k?node-id=1-2159" data-node-id="1:2137" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+              <p className="cursor-pointer leading-[16px]">{`Home `}</p>
+            </a>
+            <div className="-translate-x-1/2 absolute border-[#0f0200] border-l-4 border-r-4 border-solid border-t-4 h-[4px] left-[calc(50%+25.43px)] top-[12.92px] w-[8px]" data-node-id="1:2138" data-name="Border" />
+          </div>
+          <div className="absolute h-[32px] left-[114.86px] right-[335.36px] top-0" data-node-id="1:2139" data-name="244">
+            <a className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[17px] justify-center leading-[0] left-[calc(50%+0.15px)] text-[#0f0200] text-[16px] text-center top-[15.5px] w-[66.362px]" href="https://www.figma.com/design/5WvY9fet6wwPyvtxlkeo0k?node-id=1-1170" data-node-id="1:2140" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+              <p className="cursor-pointer leading-[16px]">About Us</p>
+            </a>
+          </div>
+          <div className="absolute h-[32px] left-[236.92px] right-[218.91px] top-0" data-node-id="1:2141" data-name="13">
+            <a className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[17px] justify-center leading-[0] left-[calc(50%-5.86px)] text-[#f83d8e] text-[16px] text-center top-[15.5px] w-[48.728px]" href="https://www.figma.com/design/5WvY9fet6wwPyvtxlkeo0k?node-id=1-2159" data-node-id="1:2142" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+              <p className="cursor-pointer leading-[16px]">{`Pages `}</p>
+            </a>
+            <div className="-translate-x-1/2 absolute border-[#f83d8e] border-l-4 border-r-4 border-solid border-t-4 h-[4px] left-[calc(50%+26.23px)] top-[12.92px] w-[8px]" data-node-id="1:2143" data-name="Border" />
+          </div>
+          <div className="absolute h-[32px] left-[353.37px] right-[114.69px] top-0" data-node-id="1:2144" data-name="14">
+            <a className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[17px] justify-center leading-[0] left-[calc(50%-5.89px)] text-[#0f0200] text-[16px] text-center top-[15.5px] w-[36.45px]" href="https://www.figma.com/design/5WvY9fet6wwPyvtxlkeo0k?node-id=1-2159" data-node-id="1:2145" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+              <p className="cursor-pointer leading-[16px]">{`Blog `}</p>
+            </a>
+            <div className="-translate-x-1/2 absolute border-[#0f0200] border-l-4 border-r-4 border-solid border-t-4 h-[4px] left-[calc(50%+20.11px)] top-[12.92px] w-[8px]" data-node-id="1:2146" data-name="Border" />
+          </div>
+          <div className="absolute h-[32px] left-[457.59px] right-[20px] top-0" data-node-id="1:2147" data-name="245">
+            <a className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[17px] justify-center leading-[0] left-[calc(50%+0.16px)] text-[#0f0200] text-[16px] text-center top-[15.5px] w-[39.008px]" href="https://www.figma.com/design/XyQF2PqHFmF2VlxXAALhkp?node-id=8-2063" data-node-id="1:2148" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+              <p className="cursor-pointer leading-[16px]">{`Faq's`}</p>
+            </a>
+          </div>
+        </div>
+        <div className="-translate-y-1/2 absolute h-[24px] left-[1125px] top-1/2 w-[20px]" data-node-id="1:2149" data-name="246">
+          <div className="-translate-y-1/2 absolute left-0 size-[20px] top-[calc(50%+0.8px)]" data-node-id="1:2150" data-name="header-magnifyingglass.png">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgHeaderMagnifyingglassPng} />
+            </div>
+          </div>
+        </div>
+        <a className="-translate-y-1/2 absolute block cursor-pointer h-[24.3px] left-[1177px] top-[calc(50%-0.01px)] w-[20px]" data-node-id="1:2151" data-name="247">
+          <div className="-translate-y-1/2 absolute h-[23px] left-0 top-[calc(50%+0.65px)] w-[20px]" data-node-id="1:2152" data-name="header-cart.png">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgHeaderCartPng} />
+            </div>
+          </div>
+          <div className="absolute bg-[#683292] bottom-[-4px] right-[-6px] rounded-[13px] size-[13px]" data-node-id="1:2153" data-name="Background">
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[7px] justify-center leading-[0] left-[calc(50%+0.17px)] text-[7px] text-center text-white top-[6.5px] w-[4.371px]" data-node-id="1:2154" role="link" style={{ fontVariationSettings: '"wdth" 100' }} tabIndex="0">
+              <p className="cursor-pointer leading-[13px]">0</p>
+            </div>
+          </div>
+        </a>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute bg-[#f83d8e] h-[52px] leading-[0] left-[1249px] overflow-clip rounded-[30px] shadow-[0px_3px_22px_3px_rgba(248,61,142,0.31)] text-center text-white top-1/2 w-[168px]" data-node-id="1:2155" data-name="248">
+          <div className="-translate-x-1/2 -translate-y-1/2 absolute flex flex-col font-['Archivo:Bold'] font-bold h-[17px] justify-center left-[calc(50%-15.08px)] text-[16px] top-[25.5px] w-[84.891px]" data-node-id="1:2156" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="leading-[16px]">Contact Us</p>
+          </div>
+          <div className="-translate-x-1/2 -translate-y-1/2 absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center left-[calc(50%+52.44px)] not-italic text-[12px] top-[26.5px] w-[10.819px]" data-node-id="1:2157">
+            <p className="leading-[12px]">{`\uF061`}</p>
+          </div>
+        </div>
+        <div className="-translate-y-1/2 absolute h-[70px] left-0 top-1/2 w-[185px]" data-node-id="1:2158" data-name="249">
+          <div className="absolute contents left-[-0.5px] top-[-0.5px]" data-node-id="1:2159">
+            <div className="-translate-y-1/2 absolute h-[70px] left-[-0.5px] top-[calc(50%-0.5px)] w-[54px]" data-node-id="1:2160" data-name="logo">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[342.59%]" src={imgLogo} />
+              </div>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Berkshire_Swash:Regular'] h-[46px] justify-center leading-[0] left-[53.5px] not-italic text-[#212529] text-[0px] top-[34.5px] w-[118px]" data-node-id="1:2161">
+              <p className="text-[32px]">
+                <span className="leading-[108px] text-[#f83d8e]">Icy</span>
+                <span className="leading-[108px] text-[#77449c]">Tales</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bg-white h-[1356.06px] left-0 right-0 top-[581px]" data-node-id="1:2162" data-name="Section">
+        <div className="-translate-y-1/2 absolute h-[44px] left-[410px] top-[calc(50%-506.03px)] w-[235px]" data-node-id="1:2163" data-name="Form">
+          <div className="absolute bg-white border-[#e3e4e5] border-b border-l border-solid border-t h-[42px] left-[0.43%] overflow-clip right-[16.17%] rounded-bl-[25px] rounded-tl-[25px] top-px" data-node-id="1:2164" data-name="Input">
+            <div className="absolute h-[15px] left-[12px] overflow-clip right-[12px] top-[13.5px]" data-node-id="1:2165" data-name="Container">
+              <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] left-0 text-[#0f0200] text-[14px] top-[7.5px] w-[44.726px]" data-node-id="1:2166" style={{ fontVariationSettings: '"wdth" 100' }}>
+                <p className="leading-[normal]">Search</p>
+              </div>
+            </div>
+          </div>
+          <div className="-translate-y-1/2 absolute border-[#e3e4e5] border-b border-r border-solid border-t h-[44px] left-[196px] rounded-br-[25px] rounded-tr-[25px] top-1/2 w-[39px]" data-node-id="1:2167" data-name="Button">
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[15px] justify-center leading-[0] left-[19.18px] not-italic text-[#787878] text-[14px] text-center top-[20px] w-[14.363px]" data-node-id="1:2168">
+              <p className="leading-[14px]">{`\uF002`}</p>
+            </div>
+          </div>
+        </div>
+        <div className="absolute border-[#e3e4e5] border-b border-solid h-[279px] left-[410px] right-[1265px] top-[254px]" data-node-id="1:2169" data-name="HorizontalBorder">
+          <div className="-translate-y-1/2 [word-break:break-word] absolute capitalize flex flex-col font-['Berkshire_Swash:Regular'] h-[24px] justify-center leading-[0] left-0 not-italic text-[#0f0200] text-[22px] top-[12px] w-[96.328px]" data-node-id="1:2170">
+            <p className="leading-[24px]">Categories</p>
+          </div>
+          <div className="absolute h-[204px] left-0 right-0 top-[44px]" data-node-id="1:2171" data-name="List">
+            <div className="absolute h-[34px] left-0 right-0 top-0" data-node-id="1:2172" data-name="Item">
+              <div className="absolute h-[15px] left-[33px] top-[10px] w-[133.73px]" data-node-id="1:2173" data-name="250">
+                <a className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] left-0 text-[#787878] text-[14px] top-[7.5px] w-[134.034px]" href="https://www.figma.com/design/XyQF2PqHFmF2VlxXAALhkp?node-id=7-465" data-node-id="1:2174" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+                  <p className="cursor-pointer leading-[20px]">Canned Ice Cream(3)</p>
+                </a>
+              </div>
+              <div className="absolute border border-[#e3e4e5] border-solid left-0 rounded-[20px] size-[20px] top-[9px]" data-node-id="1:2175" data-name="Border" />
+            </div>
+            <div className="absolute h-[34px] left-0 right-0 top-[34px]" data-node-id="1:2176" data-name="Item">
+              <div className="absolute h-[15px] left-[33px] top-[10px] w-[103.53px]" data-node-id="1:2177" data-name="251">
+                <a className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] left-0 text-[#787878] text-[14px] top-[7.5px] w-[103.89px]" href="https://www.figma.com/design/XyQF2PqHFmF2VlxXAALhkp?node-id=7-465" data-node-id="1:2178" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+                  <p className="cursor-pointer leading-[20px]">Frozen Yogurt(5)</p>
+                </a>
+              </div>
+              <div className="absolute border border-[#e3e4e5] border-solid left-0 rounded-[20px] size-[20px] top-[9px]" data-node-id="1:2179" data-name="Border" />
+            </div>
+            <div className="absolute h-[34px] left-0 right-0 top-[68px]" data-node-id="1:2180" data-name="Item">
+              <div className="absolute h-[15px] left-[33px] top-[10px] w-[123.91px]" data-node-id="1:2181" data-name="252">
+                <a className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] left-0 text-[#787878] text-[14px] top-[7.5px] w-[124.302px]" href="https://www.figma.com/design/XyQF2PqHFmF2VlxXAALhkp?node-id=7-465" data-node-id="1:2182" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+                  <p className="cursor-pointer leading-[20px]">Ice Cream Cakes(3)</p>
+                </a>
+              </div>
+              <div className="absolute border border-[#e3e4e5] border-solid left-0 rounded-[20px] size-[20px] top-[9px]" data-node-id="1:2183" data-name="Border" />
+            </div>
+            <div className="absolute h-[34px] left-0 right-0 top-[102px]" data-node-id="1:2184" data-name="Item">
+              <div className="absolute h-[15px] left-[33px] top-[10px] w-[87.23px]" data-node-id="1:2185" data-name="253">
+                <a className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] left-0 text-[#787878] text-[14px] top-[7.5px] w-[87.565px]" href="https://www.figma.com/design/XyQF2PqHFmF2VlxXAALhkp?node-id=7-465" data-node-id="1:2186" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+                  <p className="cursor-pointer leading-[20px]">Milkshakes(6)</p>
+                </a>
+              </div>
+              <div className="absolute border border-[#e3e4e5] border-solid left-0 rounded-[20px] size-[20px] top-[9px]" data-node-id="1:2187" data-name="Border" />
+            </div>
+            <div className="absolute h-[34px] left-0 right-0 top-[136px]" data-node-id="1:2188" data-name="Item">
+              <div className="absolute h-[15px] left-[33px] top-[10px] w-[78.33px]" data-node-id="1:2189" data-name="254">
+                <a className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] left-0 text-[#787878] text-[14px] top-[7.5px] w-[78.651px]" href="https://www.figma.com/design/XyQF2PqHFmF2VlxXAALhkp?node-id=7-465" data-node-id="1:2190" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+                  <p className="cursor-pointer leading-[20px]">Popsicles(4)</p>
+                </a>
+              </div>
+              <div className="absolute border border-[#e3e4e5] border-solid left-0 rounded-[20px] size-[20px] top-[9px]" data-node-id="1:2191" data-name="Border" />
+            </div>
+            <div className="absolute h-[34px] left-0 right-0 top-[170px]" data-node-id="1:2192" data-name="Item">
+              <div className="absolute h-[15px] left-[33px] top-[10px] w-[73.5px]" data-node-id="1:2193" data-name="255">
+                <a className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] left-0 text-[#787878] text-[14px] top-[7.5px] w-[73.813px]" href="https://www.figma.com/design/XyQF2PqHFmF2VlxXAALhkp?node-id=7-465" data-node-id="1:2194" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+                  <p className="cursor-pointer leading-[20px]">Sundaes(5)</p>
+                </a>
+              </div>
+              <div className="absolute border border-[#e3e4e5] border-solid left-0 rounded-[20px] size-[20px] top-[9px]" data-node-id="1:2195" data-name="Border" />
+            </div>
+          </div>
+        </div>
+        <div className="absolute border-[#e3e4e5] border-b border-solid h-[120px] left-[410px] right-[1265px] top-[563px]" data-node-id="1:2196" data-name="HorizontalBorder">
+          <div className="-translate-y-1/2 [word-break:break-word] absolute capitalize flex flex-col font-['Berkshire_Swash:Regular'] h-[24px] justify-center leading-[0] left-0 not-italic text-[#0f0200] text-[22px] top-[12px] w-[140.979px]" data-node-id="1:2197">
+            <p className="leading-[24px]">Filter by Price</p>
+          </div>
+          <div className="absolute h-[45px] left-0 right-0 top-[44px]" data-node-id="1:2198" data-name="Fieldset">
+            <div className="absolute bg-white h-[2px] left-0 right-0 rounded-[5px] top-0" data-node-id="1:2199" data-name="Input" />
+            <div className="absolute bg-white h-[2px] left-0 right-0 rounded-[5px] top-0" data-node-id="1:2200" data-name="Input" />
+            <div className="absolute h-[15px] left-[45.16px] overflow-auto right-[179.84px] top-[30px]" data-node-id="1:2201" data-name="Input">
+              <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] right-[-0.38px] text-[#f83d8e] text-[14px] text-right top-[7.5px] w-[8.375px]" data-node-id="1:2202" style={{ fontVariationSettings: '"wdth" 100' }}>
+                <p className="leading-[normal]">5</p>
+              </div>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] right-[170.35px] text-[#f83d8e] text-[14px] text-right top-[36.5px] w-[7.494px]" data-node-id="1:2203" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[14px]">$</p>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[14px] justify-center leading-[0] left-[79.3px] text-[#f83d8e] text-[14px] top-[37.5px] w-[5.053px]" data-node-id="1:2204" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[14px]">-</p>
+            </div>
+            <div className="absolute h-[15px] left-[88.97px] overflow-auto right-[136.03px] top-[30px]" data-node-id="1:2205" data-name="Input">
+              <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] right-[-0.39px] text-[#f83d8e] text-[14px] text-right top-[7.5px] w-[16.418px]" data-node-id="1:2206" style={{ fontVariationSettings: '"wdth" 100' }}>
+                <p className="leading-[normal]">50</p>
+              </div>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] right-[126.54px] text-[#f83d8e] text-[14px] text-right top-[36.5px] w-[7.494px]" data-node-id="1:2207" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[14px]">$</p>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[14px] justify-center leading-[0] left-0 text-[#787878] text-[14px] top-[37.5px] w-[45.498px]" data-node-id="1:2208" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[14px]">Range:</p>
+            </div>
+          </div>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute capitalize flex flex-col font-['Berkshire_Swash:Regular'] h-[24px] justify-center leading-[0] left-[410px] not-italic text-[#0f0200] text-[22px] top-[725px] w-[174.725px]" data-node-id="1:2209">
+          <p className="leading-[24px]">Featured Products</p>
+        </div>
+        <div className="absolute h-[62px] left-[410px] right-[1265px] top-[757px]" data-node-id="1:2210" data-name="Container">
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[16px] justify-center leading-[0] left-[78px] text-[#0f0200] text-[16px] top-[14px] w-[91.561px]" data-node-id="1:2211" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="leading-[16px]">Almond Joe</p>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[17px] justify-center leading-[0] left-[78px] text-[#787878] text-[16px] top-[43.5px] w-[40.452px]" data-node-id="1:2212" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid leading-[16px] line-through">$9.80</p>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[17px] justify-center leading-[0] left-[125.48px] text-[#f83d8e] text-[16px] top-[43.5px] w-[42.739px]" data-node-id="1:2213" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="leading-[16px]">$4.99</p>
+          </div>
+          <div className="-translate-x-1/2 absolute h-[62px] left-[calc(50%-89.5px)] top-0 w-[66px]" data-node-id="1:2214" data-name="153">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute left-0 max-w-none size-full top-0" src={img153} />
+            </div>
+          </div>
+        </div>
+        <div className="absolute h-[62px] left-[410px] right-[1265px] top-[839px]" data-node-id="1:2215" data-name="Container">
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[16px] justify-center leading-[0] left-[78px] text-[#0f0200] text-[16px] top-[14px] w-[96.599px]" data-node-id="1:2216" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="leading-[16px]">Berry Sorbet</p>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[17px] justify-center leading-[0] left-[78px] text-[#787878] text-[16px] top-[43.5px] w-[40.452px]" data-node-id="1:2217" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid leading-[16px] line-through">$9.80</p>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[17px] justify-center leading-[0] left-[125.48px] text-[#f83d8e] text-[16px] top-[43.5px] w-[42.739px]" data-node-id="1:2218" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="leading-[16px]">$4.99</p>
+          </div>
+          <div className="-translate-x-1/2 absolute h-[62px] left-[calc(50%-89.5px)] top-0 w-[66px]" data-node-id="1:2219" data-name="154">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute left-0 max-w-none size-full top-0" src={img154} />
+            </div>
+          </div>
+        </div>
+        <div className="absolute h-[62px] left-[410px] right-[1265px] top-[921px]" data-node-id="1:2220" data-name="Container">
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[16px] justify-center leading-[0] left-[78px] text-[#0f0200] text-[16px] top-[14px] w-[117.401px]" data-node-id="1:2221" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="leading-[16px]">Chocolate Chip</p>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[17px] justify-center leading-[0] left-[78px] text-[#787878] text-[16px] top-[43.5px] w-[40.452px]" data-node-id="1:2222" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid leading-[16px] line-through">$9.80</p>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[17px] justify-center leading-[0] left-[125.48px] text-[#f83d8e] text-[16px] top-[43.5px] w-[42.739px]" data-node-id="1:2223" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="leading-[16px]">$4.99</p>
+          </div>
+          <div className="-translate-x-1/2 absolute h-[62px] left-[calc(50%-89.5px)] top-0 w-[66px]" data-node-id="1:2224" data-name="155">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute left-0 max-w-none size-full top-0" src={img155} />
+            </div>
+          </div>
+        </div>
+        <div className="absolute h-[62px] left-[410px] right-[1265px] top-[1003px]" data-node-id="1:2225" data-name="Container">
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[16px] justify-center leading-[0] left-[78px] text-[#0f0200] text-[16px] top-[14px] w-[78.23px]" data-node-id="1:2226" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="leading-[16px]">Dairy Free</p>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[17px] justify-center leading-[0] left-[78px] text-[#787878] text-[16px] top-[43.5px] w-[40.452px]" data-node-id="1:2227" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid leading-[16px] line-through">$9.80</p>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[17px] justify-center leading-[0] left-[125.48px] text-[#f83d8e] text-[16px] top-[43.5px] w-[42.739px]" data-node-id="1:2228" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="leading-[16px]">$4.99</p>
+          </div>
+          <div className="-translate-x-1/2 absolute h-[62px] left-[calc(50%-89.5px)] top-0 w-[66px]" data-node-id="1:2229" data-name="156">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute left-0 max-w-none size-full top-0" src={img156} />
+            </div>
+          </div>
+        </div>
+        <div className="absolute inset-[150px_390px_150px_675px]" data-node-id="1:2230" data-name="Container">
+          <div className="-translate-y-1/2 absolute bg-[#f83d8e] left-[15px] rounded-[5px] size-[44px] top-[calc(50%-506.03px)]" data-node-id="1:2231" data-name="Figure">
+            <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 size-[22px] top-[calc(50%+0.8px)]" data-node-id="1:2232" data-name="shop-gridicon.png">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgShopGridiconPng} />
+              </div>
+            </div>
+          </div>
+          <div className="-translate-y-1/2 absolute bg-[#f1f9f9] left-[71px] rounded-[5px] size-[44px] top-[calc(50%-506.03px)]" data-node-id="1:2233" data-name="Figure">
+            <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 size-[24px] top-[calc(50%+0.8px)]" data-node-id="1:2234" data-name="shop-listicon.png">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgShopListiconPng} />
+              </div>
+            </div>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[14px] justify-center leading-[0] left-[137px] text-[#787878] text-[14px] top-[22px] w-[166.189px]" data-node-id="1:2235" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="leading-[14px]">Showing 1–18 of 24 results</p>
+          </div>
+          <div className="absolute border border-[#e3e4e5] border-solid h-[40px] left-[658px] rounded-[25px] top-[2px] w-[181px]" data-node-id="1:2236" data-name="Options">
+            <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[25px]">
+              <div className="absolute bg-white inset-0 rounded-[25px]" />
+              <div className="absolute inset-0 overflow-hidden rounded-[25px]">
+                <img alt="" className="absolute h-[15%] left-[86.31%] max-w-none top-[45%] w-[4.42%]" src={imgOptions} />
+              </div>
+            </div>
+            <div className="-translate-y-1/2 absolute h-[16px] left-[26px] overflow-clip right-[10px] top-1/2" data-node-id="1:2237" data-name="Container">
+              <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] left-0 text-[#0f0200] text-[14px] top-[7.5px] w-[92.903px]" data-node-id="1:2238" style={{ fontVariationSettings: '"wdth" 100' }}>
+                <p className="leading-[16px]">Default Sorting</p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute h-[416.53px] left-[15px] right-[585.02px] top-[104px]" data-node-id="1:2239" data-name="Container">
+            <div className="absolute bg-black h-[210.53px] left-0 overflow-clip right-0 top-0" data-node-id="1:2240" data-name="Figure">
+              <div className="-translate-y-1/2 absolute h-[210.53px] left-0 top-1/2 w-[254.98px]" data-node-id="1:2241" data-name="vegan-image1.jpg">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <img alt="" className="absolute left-0 max-w-none size-full top-0" src={img155} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute h-[48px] left-0 right-0 top-[240.53px]" data-node-id="1:2242" data-name="Heading 6">
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[46px] justify-center leading-[0] left-[calc(50%+0.11px)] text-[#0f0200] text-[20px] text-center top-[24px] w-[146.47px]" data-node-id="1:2243" style={{ fontVariationSettings: '"wdth" 100' }}>
+                <p className="leading-[24px] mb-0">Coconut Milk</p>
+                <p className="leading-[24px]">Chocolate Chip</p>
+              </div>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-56.5px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2244">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-39.64px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2245">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-22.78px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2246">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-5.92px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2247">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%+10.94px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2248">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:SemiBold'] font-semibold h-[15px] justify-center leading-[0] left-[calc(50%+42.31px)] text-[#0f0200] text-[14px] text-center top-[311.03px] w-[42.88px]" data-node-id="1:2249" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[16px]">(4.9/5)</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[24px] justify-center leading-[0] left-[calc(50%+0.19px)] text-[#683292] text-[22px] text-center top-[343.53px] w-[58.649px]" data-node-id="1:2250" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[22px]">$5.99</p>
+            </div>
+            <a className="-translate-x-1/2 [word-break:break-word] absolute bg-[#f83d8e] block cursor-pointer h-[44px] leading-[0] left-1/2 rounded-[30px] text-center text-white top-[372.53px] w-[138.72px]" data-node-id="1:2251" data-name="256">
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute flex flex-col font-['Archivo:SemiBold'] font-semibold h-[15px] justify-center left-[calc(50%-11.09px)] text-[14px] top-[21.5px] w-[72.531px]" data-node-id="1:2252" role="link" style={{ fontVariationSettings: '"wdth" 100' }} tabIndex="0">
+                <p className="cursor-pointer leading-[14px]">Add to Cart</p>
+              </div>
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center left-[calc(50%+42.26px)] not-italic text-[12px] top-[21.5px] w-[10.819px]" data-node-id="1:2253" role="link" tabIndex="0">
+                <p className="cursor-pointer leading-[12px]">{`\uF061`}</p>
+              </div>
+            </a>
+          </div>
+          <div className="absolute h-[416.53px] left-[299.98px] right-[300.04px] top-[104px]" data-node-id="1:2254" data-name="Container">
+            <div className="absolute bg-black h-[210.53px] left-0 overflow-clip right-0 top-0" data-node-id="1:2255" data-name="Figure">
+              <div className="-translate-y-1/2 absolute h-[210.53px] left-0 top-1/2 w-[254.98px]" data-node-id="1:2256" data-name="vegan-image2.jpg">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <img alt="" className="absolute left-0 max-w-none size-full top-0" src={img153} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute h-[48px] left-0 right-0 top-[240.53px]" data-node-id="1:2257" data-name="Heading 6">
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[46px] justify-center leading-[0] left-[calc(50%+0.1px)] text-[#0f0200] text-[20px] text-center top-[24px] w-[113.48px]" data-node-id="1:2258" style={{ fontVariationSettings: '"wdth" 100' }}>
+                <p className="leading-[24px] mb-0">Almond Joy</p>
+                <p className="leading-[24px]">Sundae</p>
+              </div>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-56.49px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2259">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-39.63px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2260">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-22.77px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2261">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-5.91px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2262">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%+10.94px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2263">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:SemiBold'] font-semibold h-[15px] justify-center leading-[0] left-[calc(50%+42.31px)] text-[#0f0200] text-[14px] text-center top-[311.03px] w-[42.88px]" data-node-id="1:2264" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[16px]">(4.9/5)</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[24px] justify-center leading-[0] left-[calc(50%+0.19px)] text-[#683292] text-[22px] text-center top-[343.53px] w-[58.719px]" data-node-id="1:2265" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[22px]">$6.49</p>
+            </div>
+            <a className="-translate-x-1/2 [word-break:break-word] absolute bg-[#f83d8e] block cursor-pointer h-[44px] leading-[0] left-1/2 rounded-[30px] text-center text-white top-[372.53px] w-[138.72px]" data-node-id="1:2266" data-name="257">
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute flex flex-col font-['Archivo:SemiBold'] font-semibold h-[15px] justify-center left-[calc(50%-11.09px)] text-[14px] top-[21.5px] w-[72.531px]" data-node-id="1:2267" role="link" style={{ fontVariationSettings: '"wdth" 100' }} tabIndex="0">
+                <p className="cursor-pointer leading-[14px]">Add to Cart</p>
+              </div>
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center left-[calc(50%+42.27px)] not-italic text-[12px] top-[21.5px] w-[10.819px]" data-node-id="1:2268" role="link" tabIndex="0">
+                <p className="cursor-pointer leading-[12px]">{`\uF061`}</p>
+              </div>
+            </a>
+          </div>
+          <div className="absolute h-[416.53px] left-[584.97px] right-[15.05px] top-[104px]" data-node-id="1:2269" data-name="Container">
+            <div className="absolute bg-black h-[210.53px] left-0 overflow-clip right-0 top-0" data-node-id="1:2270" data-name="Figure">
+              <div className="-translate-y-1/2 absolute h-[210.53px] left-0 top-1/2 w-[254.98px]" data-node-id="1:2271" data-name="vegan-image3.jpg">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <img alt="" className="absolute left-0 max-w-none size-full top-0" src={img154} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute h-[48px] left-0 right-0 top-[240.53px]" data-node-id="1:2272" data-name="Heading 6">
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[46px] justify-center leading-[0] left-[calc(50%+0.1px)] text-[#0f0200] text-[20px] text-center top-[24px] w-[64.33px]" data-node-id="1:2273" style={{ fontVariationSettings: '"wdth" 100' }}>
+                <p className="leading-[24px] mb-0">Berry</p>
+                <p className="leading-[24px]">Sorbet</p>
+              </div>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-56.5px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2274">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-39.64px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2275">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-22.78px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2276">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-5.92px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2277">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%+10.94px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2278">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:SemiBold'] font-semibold h-[15px] justify-center leading-[0] left-[calc(50%+42.31px)] text-[#0f0200] text-[14px] text-center top-[311.03px] w-[42.88px]" data-node-id="1:2279" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[16px]">(4.9/5)</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[24px] justify-center leading-[0] left-[calc(50%+0.18px)] text-[#683292] text-[22px] text-center top-[343.53px] w-[58.729px]" data-node-id="1:2280" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[22px]">$4.89</p>
+            </div>
+            <a className="-translate-x-1/2 [word-break:break-word] absolute bg-[#f83d8e] block cursor-pointer h-[44px] leading-[0] left-[calc(50%-0.01px)] rounded-[30px] text-center text-white top-[372.53px] w-[138.72px]" data-node-id="1:2281" data-name="258">
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute flex flex-col font-['Archivo:SemiBold'] font-semibold h-[15px] justify-center left-[calc(50%-11.09px)] text-[14px] top-[21.5px] w-[72.531px]" data-node-id="1:2282" role="link" style={{ fontVariationSettings: '"wdth" 100' }} tabIndex="0">
+                <p className="cursor-pointer leading-[14px]">Add to Cart</p>
+              </div>
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center left-[calc(50%+42.27px)] not-italic text-[12px] top-[21.5px] w-[10.819px]" data-node-id="1:2283" role="link" tabIndex="0">
+                <p className="cursor-pointer leading-[12px]">{`\uF061`}</p>
+              </div>
+            </a>
+          </div>
+          <div className="absolute h-[416.53px] left-[15px] right-[585.02px] top-[550.53px]" data-node-id="1:2284" data-name="Container">
+            <div className="absolute bg-black h-[210.53px] left-0 overflow-clip right-0 top-0" data-node-id="1:2285" data-name="Figure">
+              <div className="-translate-y-1/2 absolute h-[210.53px] left-0 top-1/2 w-[254.98px]" data-node-id="1:2286" data-name="best-image1.jpg">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgBestImage1Jpg} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute h-[48px] left-0 right-0 top-[240.53px]" data-node-id="1:2287" data-name="Heading 6">
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[46px] justify-center leading-[0] left-[calc(50%+0.1px)] text-[#0f0200] text-[20px] text-center top-[24px] w-[98.34px]" data-node-id="1:2288" style={{ fontVariationSettings: '"wdth" 100' }}>
+                <p className="leading-[24px] mb-0">Chocolate</p>
+                <p className="leading-[24px]">Fudge</p>
+              </div>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-56.5px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2289">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-39.64px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2290">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-22.78px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2291">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-5.92px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2292">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%+10.94px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2293">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:SemiBold'] font-semibold h-[15px] justify-center leading-[0] left-[calc(50%+42.31px)] text-[#0f0200] text-[14px] text-center top-[311.03px] w-[42.88px]" data-node-id="1:2294" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[16px]">(4.9/5)</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[24px] justify-center leading-[0] left-[calc(50%+0.19px)] text-[#683292] text-[22px] text-center top-[343.53px] w-[58.649px]" data-node-id="1:2295" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[22px]">$5.99</p>
+            </div>
+            <a className="-translate-x-1/2 [word-break:break-word] absolute bg-[#f83d8e] block cursor-pointer h-[44px] leading-[0] left-1/2 rounded-[30px] text-center text-white top-[372.53px] w-[138.72px]" data-node-id="1:2296" data-name="259">
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute flex flex-col font-['Archivo:SemiBold'] font-semibold h-[15px] justify-center left-[calc(50%-11.09px)] text-[14px] top-[21.5px] w-[72.531px]" data-node-id="1:2297" role="link" style={{ fontVariationSettings: '"wdth" 100' }} tabIndex="0">
+                <p className="cursor-pointer leading-[14px]">Add to Cart</p>
+              </div>
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center left-[calc(50%+42.26px)] not-italic text-[12px] top-[21.5px] w-[10.819px]" data-node-id="1:2298" role="link" tabIndex="0">
+                <p className="cursor-pointer leading-[12px]">{`\uF061`}</p>
+              </div>
+            </a>
+          </div>
+          <div className="absolute h-[416.53px] left-[299.98px] right-[300.04px] top-[550.53px]" data-node-id="1:2299" data-name="Container">
+            <div className="absolute bg-black h-[210.53px] left-0 overflow-clip right-0 top-0" data-node-id="1:2300" data-name="Figure">
+              <div className="-translate-y-1/2 absolute h-[210.53px] left-0 top-1/2 w-[254.98px]" data-node-id="1:2301" data-name="best-image2.jpg">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <img alt="" className="absolute left-0 max-w-none size-full top-0" src={img156} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute h-[48px] left-0 right-0 top-[240.53px]" data-node-id="1:2302" data-name="Heading 6">
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[46px] justify-center leading-[0] left-[calc(50%+0.11px)] text-[#0f0200] text-[20px] text-center top-[24px] w-[97.59px]" data-node-id="1:2303" style={{ fontVariationSettings: '"wdth" 100' }}>
+                <p className="leading-[24px] mb-0">Dairy Free</p>
+                <p className="leading-[24px]">Classic</p>
+              </div>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-56.49px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2304">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-39.63px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2305">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-22.77px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2306">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-5.91px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2307">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%+10.94px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2308">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:SemiBold'] font-semibold h-[15px] justify-center leading-[0] left-[calc(50%+42.31px)] text-[#0f0200] text-[14px] text-center top-[311.03px] w-[42.88px]" data-node-id="1:2309" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[16px]">(4.9/5)</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[24px] justify-center leading-[0] left-[calc(50%+0.19px)] text-[#683292] text-[22px] text-center top-[343.53px] w-[58.719px]" data-node-id="1:2310" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[22px]">$6.49</p>
+            </div>
+            <a className="-translate-x-1/2 [word-break:break-word] absolute bg-[#f83d8e] block cursor-pointer h-[44px] leading-[0] left-1/2 rounded-[30px] text-center text-white top-[372.53px] w-[138.72px]" data-node-id="1:2311" data-name="260">
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute flex flex-col font-['Archivo:SemiBold'] font-semibold h-[15px] justify-center left-[calc(50%-11.09px)] text-[14px] top-[21.5px] w-[72.531px]" data-node-id="1:2312" role="link" style={{ fontVariationSettings: '"wdth" 100' }} tabIndex="0">
+                <p className="cursor-pointer leading-[14px]">Add to Cart</p>
+              </div>
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center left-[calc(50%+42.27px)] not-italic text-[12px] top-[21.5px] w-[10.819px]" data-node-id="1:2313" role="link" tabIndex="0">
+                <p className="cursor-pointer leading-[12px]">{`\uF061`}</p>
+              </div>
+            </a>
+          </div>
+          <div className="absolute h-[416.53px] left-[584.97px] right-[15.05px] top-[550.53px]" data-node-id="1:2314" data-name="Container">
+            <div className="absolute bg-black h-[210.53px] left-0 overflow-clip right-0 top-0" data-node-id="1:2315" data-name="Figure">
+              <div className="-translate-y-1/2 absolute h-[210.53px] left-0 top-1/2 w-[254.98px]" data-node-id="1:2316" data-name="best-image3.jpg">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgBestImage3Jpg} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute h-[48px] left-0 right-0 top-[240.53px]" data-node-id="1:2317" data-name="Heading 6">
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[46px] justify-center leading-[0] left-[calc(50%+0.11px)] text-[#0f0200] text-[20px] text-center top-[24px] w-[97.59px]" data-node-id="1:2318" style={{ fontVariationSettings: '"wdth" 100' }}>
+                <p className="leading-[24px] mb-0">Dairy Free</p>
+                <p className="leading-[24px]">Almond</p>
+              </div>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-56.5px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2319">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-39.64px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2320">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-22.78px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2321">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%-5.92px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2322">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center leading-[0] left-[calc(50%+10.94px)] not-italic text-[#fbab2a] text-[12px] text-center top-[311.03px] w-[13.856px]" data-node-id="1:2323">
+              <p className="leading-[12px]">{`\uF005`}</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:SemiBold'] font-semibold h-[15px] justify-center leading-[0] left-[calc(50%+42.31px)] text-[#0f0200] text-[14px] text-center top-[311.03px] w-[42.88px]" data-node-id="1:2324" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[16px]">(4.9/5)</p>
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[24px] justify-center leading-[0] left-[calc(50%+0.18px)] text-[#683292] text-[22px] text-center top-[343.53px] w-[58.729px]" data-node-id="1:2325" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[22px]">$4.89</p>
+            </div>
+            <a className="-translate-x-1/2 [word-break:break-word] absolute bg-[#f83d8e] block cursor-pointer h-[44px] leading-[0] left-[calc(50%-0.01px)] rounded-[30px] text-center text-white top-[372.53px] w-[138.72px]" data-node-id="1:2326" data-name="261">
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute flex flex-col font-['Archivo:SemiBold'] font-semibold h-[15px] justify-center left-[calc(50%-11.09px)] text-[14px] top-[21.5px] w-[72.531px]" data-node-id="1:2327" role="link" style={{ fontVariationSettings: '"wdth" 100' }} tabIndex="0">
+                <p className="cursor-pointer leading-[14px]">Add to Cart</p>
+              </div>
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[13px] justify-center left-[calc(50%+42.27px)] not-italic text-[12px] top-[21.5px] w-[10.819px]" data-node-id="1:2328" role="link" tabIndex="0">
+                <p className="cursor-pointer leading-[12px]">{`\uF061`}</p>
+              </div>
+            </a>
+          </div>
+          <div className="-translate-x-1/2 absolute bottom-0 left-1/2 rounded-[4px] top-[1011.06px] w-[241px]" data-node-id="1:2329" data-name="List">
+            <div className="absolute border border-[#e3e4e5] border-solid left-[8px] rounded-[45px] size-[45px] top-0" data-node-id="1:2330" data-name="262">
+              <a className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[20px] justify-center leading-[0] left-[calc(50%+0.15px)] text-[#787878] text-[18px] text-center top-[22px] w-[9.695px]" href="https://www.figma.com/design/XyQF2PqHFmF2VlxXAALhkp?node-id=8-789" data-node-id="1:2331" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+                <p className="cursor-pointer leading-[28px]">1</p>
+              </a>
+            </div>
+            <div className="absolute border border-[#e3e4e5] border-solid left-[68px] rounded-[45px] size-[45px] top-0" data-node-id="1:2332" data-name="263">
+              <a className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[20px] justify-center leading-[0] left-[calc(50%+0.16px)] text-[#787878] text-[18px] text-center top-[22px] w-[10.535px]" href="https://www.figma.com/design/XyQF2PqHFmF2VlxXAALhkp?node-id=8-1020" data-node-id="1:2333" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+                <p className="cursor-pointer leading-[28px]">2</p>
+              </a>
+            </div>
+            <div className="absolute border border-[#e3e4e5] border-solid left-[128px] rounded-[45px] size-[45px] top-0" data-node-id="1:2334" data-name="264">
+              <a className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[20px] justify-center leading-[0] left-[calc(50%+0.15px)] text-[#787878] text-[18px] text-center top-[22px] w-[10.647px]" href="https://www.figma.com/design/XyQF2PqHFmF2VlxXAALhkp?node-id=8-1245" data-node-id="1:2335" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+                <p className="cursor-pointer leading-[28px]">3</p>
+              </a>
+            </div>
+            <div className="absolute bg-[#f83d8e] border border-[#f83d8e] border-solid left-[188px] rounded-[45px] size-[45px] top-0" data-node-id="1:2336" data-name="265">
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[16px] justify-center leading-[0] left-[calc(50%+0.16px)] not-italic text-[16px] text-center text-white top-[21px] w-[10.313px]" data-node-id="1:2337">
+                <p className="leading-[16px]">{`\uF105`}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bg-[#683292] h-[386px] left-0 right-0 top-[1937px]" data-node-id="1:2338" data-name="Section">
+        <div className="-translate-y-1/2 absolute h-[293px] left-0 opacity-10 top-[calc(50%+46.5px)] w-[244px]" data-node-id="1:2339" data-name="footer-image.png">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgFooterImagePng} />
+          </div>
+        </div>
+        <div className="-translate-x-1/2 absolute h-[386px] left-1/2 top-0 w-[1140px]" data-node-id="1:2340" data-name="Container">
+          <div className="absolute h-[108px] left-[15px] right-[965px] top-[100px]" data-node-id="1:2341" data-name="266">
+            <div className="absolute contents left-[-17px] top-[16.5px]" data-node-id="1:2342">
+              <div className="-translate-y-1/2 absolute h-[75px] left-[-17px] top-1/2 w-[87px]" data-node-id="1:2343" data-name="logo">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <img alt="" className="absolute h-[144%] left-[-24.14%] max-w-none top-0 w-[149.43%]" src={imgLogo1} />
+                </div>
+              </div>
+              <div className="absolute contents left-[60px] top-[31.5px]" data-node-id="1:2344">
+                <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Berkshire_Swash:Regular'] h-[46px] justify-center leading-[0] left-[60px] not-italic text-[#212529] text-[0px] top-[54.5px] w-[118px]" data-node-id="1:2345">
+                  <p className="text-[32px]">
+                    <span className="leading-[108px] text-[#f83d8e]">Icy</span>
+                    <span className="leading-[108px] text-white">Tales</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:SemiBold'] font-semibold h-[22px] justify-center leading-[0] left-[259px] text-[22px] text-white top-[111px] w-[109.589px]" data-node-id="1:2346" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="leading-[22px]">Navigation</p>
+          </div>
+          <div className="absolute bottom-[139px] left-[259px] top-[147px] w-[104px]" data-node-id="1:2347" data-name="List">
+            <div className="absolute h-[24px] left-0 right-[48px] top-0" data-node-id="1:2348" data-name="Item">
+              <div className="absolute h-[15px] left-[18px] top-[5px] w-[38px]" data-node-id="1:2349" data-name="267">
+                <a className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] left-0 text-[#cfb6e2] text-[14px] top-[7.5px] w-[38.316px]" href="https://www.figma.com/design/5WvY9fet6wwPyvtxlkeo0k?node-id=1-2" data-node-id="1:2350" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+                  <p className="cursor-pointer leading-[14px]">Home</p>
+                </a>
+              </div>
+              <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[5px] justify-center leading-[0] left-0 not-italic text-[#f83d8e] text-[5px] top-[12.5px] w-[5.3px]" data-node-id="1:2351">
+                <p className="leading-[5px]">{`\uF111`}</p>
+              </div>
+            </div>
+            <div className="absolute h-[24px] left-0 right-[48px] top-[38px]" data-node-id="1:2352" data-name="Item">
+              <div className="absolute h-[15px] left-[18px] top-[5px] w-[37.5px]" data-node-id="1:2353" data-name="268">
+                <a className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] left-0 text-[#cfb6e2] text-[14px] top-[7.5px] w-[37.814px]" href="https://www.figma.com/design/5WvY9fet6wwPyvtxlkeo0k?node-id=1-1170" data-node-id="1:2354" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+                  <p className="cursor-pointer leading-[14px]">About</p>
+                </a>
+              </div>
+              <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[5px] justify-center leading-[0] left-0 not-italic text-[#f83d8e] text-[5px] top-[12.5px] w-[5.3px]" data-node-id="1:2355">
+                <p className="leading-[5px]">{`\uF111`}</p>
+              </div>
+            </div>
+            <div className="absolute h-[24px] left-0 right-[48px] top-[76px]" data-node-id="1:2356" data-name="Item">
+              <div className="absolute h-[15px] left-[18px] top-[5px] w-[33.23px]" data-node-id="1:2357" data-name="269">
+                <a className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] left-0 text-[#cfb6e2] text-[14px] top-[7.5px] w-[33.531px]" href="https://www.figma.com/design/5WvY9fet6wwPyvtxlkeo0k?node-id=1-1870" data-node-id="1:2358" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+                  <p className="cursor-pointer leading-[14px]">Shop</p>
+                </a>
+              </div>
+              <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[5px] justify-center leading-[0] left-0 not-italic text-[#f83d8e] text-[5px] top-[12.5px] w-[5.3px]" data-node-id="1:2359">
+                <p className="leading-[5px]">{`\uF111`}</p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute bottom-[139px] left-[363px] top-[147px] w-[73.98px]" data-node-id="1:2360" data-name="List">
+            <div className="absolute h-[24px] left-0 right-0 top-0" data-node-id="1:2361" data-name="Item">
+              <div className="absolute h-[15px] left-[18px] top-[5px] w-[55.98px]" data-node-id="1:2362" data-name="270">
+                <a className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] left-0 text-[#cfb6e2] text-[14px] top-[7.5px] w-[56.352px]" href="https://www.figma.com/design/5WvY9fet6wwPyvtxlkeo0k?node-id=1-1870" data-node-id="1:2363" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+                  <p className="cursor-pointer leading-[14px]">Prodects</p>
+                </a>
+              </div>
+              <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[5px] justify-center leading-[0] left-0 not-italic text-[#f83d8e] text-[5px] top-[12.5px] w-[5.3px]" data-node-id="1:2364">
+                <p className="leading-[5px]">{`\uF111`}</p>
+              </div>
+            </div>
+            <div className="absolute h-[24px] left-0 right-0 top-[38px]" data-node-id="1:2365" data-name="Item">
+              <div className="absolute h-[15px] left-[18px] top-[5px] w-[28.69px]" data-node-id="1:2366" data-name="271">
+                <a className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] left-0 text-[#cfb6e2] text-[14px] top-[7.5px] w-[29.063px]" href="https://www.figma.com/design/XyQF2PqHFmF2VlxXAALhkp?node-id=8-2" data-node-id="1:2367" style={{ fontVariationSettings: '"wdth" 100' }} target="_blank">
+                  <p className="cursor-pointer leading-[14px]">Blog</p>
+                </a>
+              </div>
+              <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[5px] justify-center leading-[0] left-0 not-italic text-[#f83d8e] text-[5px] top-[12.5px] w-[5.3px]" data-node-id="1:2368">
+                <p className="leading-[5px]">{`\uF111`}</p>
+              </div>
+            </div>
+            <div className="absolute h-[24px] left-0 right-0 top-[76px]" data-node-id="1:2369" data-name="Item">
+              <div className="absolute h-[15px] left-[18px] top-[5px] w-[49.28px]" data-node-id="1:2370" data-name="272">
+                <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] left-0 text-[#cfb6e2] text-[14px] top-[7.5px] w-[49.631px]" data-node-id="1:2371" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  <p className="leading-[14px]">Contact</p>
+                </div>
+              </div>
+              <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[5px] justify-center leading-[0] left-0 not-italic text-[#f83d8e] text-[5px] top-[12.5px] w-[5.3px]" data-node-id="1:2372">
+                <p className="leading-[5px]">{`\uF111`}</p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute h-[136px] left-[546px] right-[300px] top-[100px]" data-node-id="1:2373" data-name="List">
+            <div className="absolute h-[66px] left-0 right-0 top-0" data-node-id="1:2374" data-name="Item">
+              <div className="absolute bg-[rgba(255,255,255,0.1)] left-0 rounded-[100px] size-[46px] top-0" data-node-id="1:2375" data-name="Overlay">
+                <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[16px] justify-center leading-[0] left-[calc(50%+0.17px)] not-italic text-[16px] text-center text-white top-[23px] w-[12.337px]" data-node-id="1:2376">
+                  <p className="leading-[46px]">{`\uF3C5`}</p>
+                </div>
+              </div>
+              <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:SemiBold'] font-semibold h-[16px] justify-center leading-[0] left-[68px] text-[16px] text-white top-[10px] w-[67.894px]" data-node-id="1:2377" style={{ fontVariationSettings: '"wdth" 100' }}>
+                <p className="leading-[16px]">Address:</p>
+              </div>
+              <div className="absolute h-[40px] left-[68px] right-0 top-[26px]" data-node-id="1:2378" data-name="273">
+                <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[35px] justify-center leading-[0] left-0 text-[#cfb6e2] text-[14px] top-[19.5px] w-[206.62px]" data-node-id="1:2379" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  <p className="leading-[20px] mb-0">121 King Street Melbourne, 3000,</p>
+                  <p className="leading-[20px]">Australia</p>
+                </div>
+              </div>
+            </div>
+            <div className="absolute h-[46px] left-0 right-0 top-[90px]" data-node-id="1:2380" data-name="Item">
+              <div className="absolute bg-[rgba(255,255,255,0.1)] left-0 rounded-[100px] size-[46px] top-0" data-node-id="1:2381" data-name="Overlay">
+                <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[16px] justify-center leading-[0] left-[calc(50%+0.19px)] not-italic text-[16px] text-center text-white top-[23px] w-[16.388px]" data-node-id="1:2382">
+                  <p className="leading-[46px]">{`\uF658`}</p>
+                </div>
+              </div>
+              <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:SemiBold'] font-semibold h-[16px] justify-center leading-[0] left-[68px] text-[16px] text-white top-[10px] w-[47.223px]" data-node-id="1:2383" style={{ fontVariationSettings: '"wdth" 100' }}>
+                <p className="leading-[16px]">Email:</p>
+              </div>
+              <div className="absolute h-[20px] left-[68px] right-[90.94px] top-[26px]" data-node-id="1:2384" data-name="274">
+                <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[15px] justify-center leading-[0] left-0 text-[#cfb6e2] text-[14px] top-[9.5px] w-[135.365px]" data-node-id="1:2385" style={{ fontVariationSettings: '"wdth" 100' }}>
+                  <p className="leading-[20px]">info@example.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute h-[20px] left-[938px] right-[15px] top-[100px]" data-node-id="1:2386" data-name="275">
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Bold'] font-bold h-[22px] justify-center leading-[0] left-0 text-[20px] text-white top-[10px] w-[163.937px]" data-node-id="1:2387" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[20px]">+123456780123</p>
+            </div>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[20px] justify-center leading-[0] left-[938px] text-[#cfb6e2] text-[14px] top-[136px] w-[174.135px]" data-node-id="1:2388" style={{ fontVariationSettings: '"wdth" 100' }}>
+            <p className="leading-[20px]">Got Questions? Call us 24/7</p>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[31px] justify-center leading-[0] left-[890px] not-italic text-[30px] text-white top-[118.5px] w-[30.381px]" data-node-id="1:2389">
+            <p className="leading-[30px]">{`\uF095`}</p>
+          </div>
+          <div className="absolute h-[46px] left-[890px] right-[15px] top-[176px]" data-node-id="1:2390" data-name="List">
+            <div className="absolute h-[17px] left-0 top-[15px] w-[46px]" data-node-id="1:2391" data-name="276">
+              <div className="absolute bg-[rgba(255,255,255,0.1)] left-0 rounded-[100px] size-[46px] top-[-15px]" data-node-id="1:2392" data-name="Overlay">
+                <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Brands:Regular'] h-[16px] justify-center leading-[0] left-[23.16px] not-italic text-[16px] text-center text-white top-[23px] w-[10.313px]" data-node-id="1:2393">
+                  <p className="leading-[46px]">{`\uF39E`}</p>
+                </div>
+              </div>
+            </div>
+            <div className="absolute h-[17px] left-[61.36px] top-[15px] w-[46px]" data-node-id="1:2394" data-name="277">
+              <div className="absolute bg-[rgba(255,255,255,0.1)] left-0 rounded-[100px] size-[46px] top-[-15px]" data-node-id="1:2395" data-name="Overlay">
+                <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Brands:Regular'] font-normal h-[16px] justify-center leading-[0] left-[23.1px] text-[16px] text-center text-white top-[23px] w-[16.2px]" data-node-id="1:2396" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+                  <p className="leading-[46px]">{`\uE61B`}</p>
+                </div>
+              </div>
+            </div>
+            <div className="absolute h-[17px] left-[122.72px] top-[15px] w-[46px]" data-node-id="1:2397" data-name="278">
+              <div className="absolute bg-[rgba(255,255,255,0.1)] left-0 rounded-[100px] size-[46px] top-[-15px]" data-node-id="1:2398" data-name="Overlay">
+                <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Brands:Regular'] h-[16px] justify-center leading-[0] left-[23.18px] not-italic text-[16px] text-center text-white top-[23px] w-[14.363px]" data-node-id="1:2399">
+                  <p className="leading-[46px]">{`\uF16D`}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute border-[rgba(255,255,255,0.15)] border-solid border-t h-[49px] left-[15px] right-[15px] top-[337px]" data-node-id="1:2400" data-name="HorizontalBorder">
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Archivo:Regular'] font-normal h-[14px] justify-center leading-[0] left-[calc(50%+35px)] text-[#cfb6e2] text-[12px] text-center top-[24px] w-[324px]" data-node-id="1:2401" style={{ fontVariationSettings: '"wdth" 100' }}>
+              <p className="leading-[12px]">Copyright © 2024 BlackRise Themes Inc All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bg-[#f83d8e] bottom-[60px] left-[1776px] rounded-[8px] size-[64px]" data-node-id="1:2402" data-name="279">
+        <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Font_Awesome_5_Free:Solid'] h-[20px] justify-center leading-[0] left-[calc(50%+0.1px)] not-italic text-[17.344px] text-center text-white top-[32px] w-[15.2px]" data-node-id="1:2403">
+          <p className="leading-[20px]">{`\uF062`}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

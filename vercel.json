@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd Icylates && npm run build",
+  "devCommand": "cd Icylates && npm run dev",
+  "installCommand": "cd Icylates && npm install",
+  "outputDirectory": "Icylates/.next"
+}

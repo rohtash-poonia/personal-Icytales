@@ -1,0 +1,35 @@
+{
+  "name": "icytales-backend",
+  "version": "1.0.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "check:syntax": "node scripts/checkSyntax.js",
+    "migrate:product-images": "node scripts/migrateProductImages.js",
+    "seed:figma": "node scripts/seedFigmaProducts.js",
+    "test": "node --test --test-concurrency=1 \"tests/*.test.js\""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "2.11.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.4",
+    "express-async-handler": "^1.2.0",
+    "express-rate-limit": "8.7.1",
+    "helmet": "8.3.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "7.8.12",
+    "multer": "2.4.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "11.3.0",
+    "supertest": "7.3.1"
+  },
+  "overrides": {
+    "qs": "6.16.1"
+  }
+}
