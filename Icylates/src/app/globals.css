@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  /* color root */
+  --color-pink: #f83d8e;
+  --color-darkbrown: #0f0200;
+  --color-lightbrown: #646464;
+  --color-darkpurple: #683292;
+  --color-lightpurple: #cfb6e2;
+  --color-lightgray: #787878;
+  --color-gray: #e3e4e5;
+   /* font family root */
+  --font-archivo: var(--font-archivo-family);
+  --font-berkshire: var(--font-berkshire-mono);
+}
+.container {
+  @apply w-full max-w-280 px-4 mx-auto;
+}
+.outer-container {
+  @apply w-full max-w-480 px-3 mx-auto;
+}
+
+body {
+  @apply font-archivo;
+}
+.heading {
+  font-family: var(--font-berkshire-mono), serif;
+  @apply text-[60px] max-lg:text-[40px] max-md:text-[34px] max-sm:text-[26px] leading-16 max-lg:leading-14 max-md:leading-11 max-sm:leading-9;
+}
+.berkshire {
+  font-family: var(--font-berkshire-mono), serif;
+}
+
+.button-underline {
+  @apply transition-all duration-300 ease-out;
+}
+
+/* Shared by storefront and admin; icons inherit their actionable parent's cursor. */
+:where(a[href], button, select, summary, [role="button"], [role="tab"],
+  input[type="button"], input[type="submit"], input[type="reset"],
+  input[type="checkbox"], input[type="radio"], input[type="file"],
+  label:has(input[type="checkbox"], input[type="radio"], input[type="file"])):not(:disabled):not([aria-disabled="true"], [aria-disabled="true"] *):not([inert], [inert] *):not(:has(input:disabled)) {
+  @apply cursor-pointer;
+}
+
+:is(:disabled, [aria-disabled="true"], [inert], label:has(input:disabled)),
+:is(:disabled, [aria-disabled="true"], [inert], label:has(input:disabled)) * {
+  @apply cursor-default;
+}

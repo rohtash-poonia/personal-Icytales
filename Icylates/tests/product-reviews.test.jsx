@@ -1,0 +1,23 @@
+import React from 'react';
+import {render,screen,waitFor} from '@testing-library/react';
+import {test,expect,vi} from 'vitest';
+const state=vi.hoisted(()=>({user:null,get:vi.fn()}));
+vi.mock('@/components/context/AuthContext',()=>({useAuth:()=>({user:state.user})}));
+vi.mock('@/lib/api',()=>({getReviews:state.get,createReview:vi.fn(),updateReview:vi.fn(),deleteReview:vi.fn()}));
+import ProductReviews from '@/components/details-page/ProductReviews';
+test('review eligibility and own text reload across id-based session changes',async()=>{
+  const base={items:[],pagination:{pages:0},reviewCount:0,rating:0,eligible:false,mine:null};
+  state.get.mockResolvedValueOnce(base);
+  const view=render(<ProductReviews productId="product"/>);
+  await screen.findByText('Sign in to check review eligibility');
+  state.user={id:'first'};
+  state.get.mockResolvedValueOnce({...base,eligible:true,mine:{rating:4,text:'First account review'}});
+  view.rerender(<ProductReviews productId="product"/>);
+  await waitFor(()=>expect(screen.getByLabelText('Your review',{exact:true})).toHaveValue('First account review'));
+  state.user={id:'second'};
+  state.get.mockResolvedValueOnce(base);
+  view.rerender(<ProductReviews productId="product"/>);
+  expect(screen.queryByDisplayValue('First account review')).not.toBeInTheDocument();
+  await screen.findByText('You can review this product after your order is completed and payment is collected.');
+  expect(state.get).toHaveBeenCalledTimes(3);
+});

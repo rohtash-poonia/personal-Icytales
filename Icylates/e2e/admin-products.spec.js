@@ -1,0 +1,31 @@
+import { expect, test } from '@playwright/test';
+
+test('administrator can create, edit and delete a product through the dashboard', async ({ page }) => {
+  await page.goto('/admin/login');
+  await page.getByLabel('Email', { exact: true }).fill('admin@e2e.test');
+  await page.getByLabel('Password', { exact: true }).fill('Admin-Password-589');
+  await page.getByRole('button', { name: 'Sign In', exact: true }).click();
+  await expect(page).toHaveURL(/\/admin$/);
+  await page.goto('/admin/products');
+  await page.getByRole('button', { name: '+ Add Product', exact: true }).click();
+  await page.getByLabel('Product Title', { exact: true }).fill('Browser catalog demo');
+  await page.getByLabel('Description', { exact: true }).fill('A product created by the browser lifecycle test.');
+  await page.getByLabel('Price (USD)', { exact: true }).fill('7.25');
+  await page.getByLabel('Stock', { exact: true }).fill('5');
+  await page.getByLabel('Category', { exact: true }).fill('Test');
+  await page.getByLabel('Flavor', { exact: true }).fill('Vanilla');
+  await page.getByLabel('Status', { exact: true }).selectOption('active');
+  await page.getByRole('button', { name: 'Create product', exact: true }).click();
+  await expect(page.getByRole('status').filter({ hasText: 'Browser catalog demo was created.' })).toBeVisible();
+  const row = page.getByRole('row').filter({ hasText: 'Browser catalog demo' });
+  await expect(row).toContainText('7.25');
+  await row.getByRole('button', { name: 'Edit', exact: true }).click();
+  await page.getByLabel('Price (USD)', { exact: true }).fill('8.25');
+  await page.getByRole('button', { name: 'Update product', exact: true }).click();
+  await expect(page.getByRole('status').filter({ hasText: 'Browser catalog demo was updated.' })).toBeVisible();
+  await expect(row).toContainText('8.25');
+  page.once('dialog', dialog => dialog.accept());
+  await row.getByRole('button', { name: 'Delete', exact: true }).click();
+  await expect(page.getByRole('status').filter({ hasText: 'Browser catalog demo was deleted.' })).toBeVisible();
+  await expect(row).toHaveCount(0);
+});

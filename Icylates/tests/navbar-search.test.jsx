@@ -1,0 +1,21 @@
+import React from 'react';
+import {render,screen,fireEvent,waitFor} from '@testing-library/react';
+import {test,expect,vi} from 'vitest';
+const mocks=vi.hoisted(()=>({getProducts:vi.fn(),push:vi.fn()}));
+vi.mock('@/lib/api',()=>({getProducts:mocks.getProducts}));
+vi.mock('next/navigation',()=>({useRouter:()=>({push:mocks.push})}));
+import NavbarSearch from '@/components/common/NavbarSearch';
+test('search debounces requests, links to products, submits and clears',async()=>{
+  mocks.getProducts.mockResolvedValue({items:[{_id:'abc',slug:'mint-cone',title:'Mint cone',price:4}]});
+  render(<NavbarSearch/>);
+  fireEvent.click(screen.getByRole('button',{name:'Search products'}));
+  const input=screen.getByRole('searchbox',{name:'Search products'});
+  fireEvent.change(input,{target:{value:'mint'}});
+  expect(mocks.getProducts).not.toHaveBeenCalled();
+  await waitFor(()=>expect(screen.getByRole('link',{name:/Mint cone/})).toHaveAttribute('href','/products/mint-cone'));
+  fireEvent.submit(input.closest('form'));
+  expect(mocks.push).toHaveBeenCalledWith('/products?search=mint');
+  fireEvent.click(screen.getByRole('button',{name:'Search products'}));
+  fireEvent.click(screen.getByRole('button',{name:'Clear search'}));
+  expect(screen.getByRole('searchbox')).toHaveValue('');
+});
