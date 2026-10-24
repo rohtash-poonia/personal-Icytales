@@ -16,11 +16,15 @@ const Header = () => {
   const menuRef = useRef(null);
   const { user, logout } = useAuth();
   const { cartItems } = useCart();
-  const cartCount = cartItems.reduce((total,item)=>total + item.qty,0);
+  const cartCount = cartItems.reduce((total, item) => total + item.qty, 0);
 
   const handleLogout = async () => {
     setAuthError("");
-    try { await logout(); } catch (error) { setAuthError(error?.message || "Sign out failed. Try again."); }
+    try {
+      await logout();
+    } catch (error) {
+      setAuthError(error?.message || "Sign out failed. Try again.");
+    }
   };
 
   const toggleDropdown = (name) => {
@@ -63,16 +67,38 @@ const Header = () => {
   }, []);
 
   return (
-    <header onKeyDown={event=>{if(event.key==="Escape"){setOpenDropdown(null);setMobileMenuOpen(false);}}} className="pt-3 pb-0 relative z-50">
-      {authError && <p role="alert" className="mx-auto mb-2 max-w-345 px-4 text-sm text-red-700">{authError}</p>}
-      <div className=" max-w-345 w-full mx-auto px-4">
+    <header
+      onKeyDown={(event) => {
+        if (event.key === "Escape") {
+          setOpenDropdown(null);
+          setMobileMenuOpen(false);
+        }
+      }}
+      className="pt-3 pb-0 relative z-50"
+    >
+      {authError && (
+        <p
+          role="alert"
+          className="mx-auto mb-2 max-w-300 px-4 text-sm text-red-700"
+        >
+          {authError}
+        </p>
+      )}
+      <div className=" max-w-300 w-full mx-auto px-4">
         <nav className="flex items-center justify-between" ref={menuRef}>
           {/* Logo */}
           <Link
             href="/"
             className="flex items-center gap-1 outline-none shrink-0"
           >
-            <Image src="/images/figma/original/abd5a.png" alt="IcyTales" width={185} height={70} priority className="h-auto w-[155px] xl:w-[185px]" />
+            <Image
+              src="/images/figma/original/abd5a.png"
+              alt="IcyTales"
+              width={185}
+              height={70}
+              priority
+              className="h-auto w-[155px] xl:w-[185px]"
+            />
           </Link>
 
           {/* ========== DESKTOP NAV (lg and up) ========== */}
@@ -143,7 +169,9 @@ const Header = () => {
 
               {/* Contact Us Button */}
               <div>
-                <Button as={Link} theme="primary"
+                <Button
+                  as={Link}
+                  theme="primary"
                   href="/contact"
                   className="inline-flex gap-[19.67px] items-center px-[26.47px] py-4.25 bg-pink text-white text-[16px] font-bold rounded-full hover:shadow-lg hover:shadow-pink/30 transition-all duration-300"
                 >
@@ -154,7 +182,12 @@ const Header = () => {
               <div className="flex items-center gap-4">
                 {user ? (
                   <>
-                    <Link href="/profile" className="max-w-32 truncate text-sm font-semibold text-pink">My account</Link>
+                    <Link
+                      href="/profile"
+                      className="max-w-32 truncate text-sm font-semibold text-pink"
+                    >
+                      My account
+                    </Link>
                     <button
                       type="button"
                       onClick={handleLogout}
@@ -190,7 +223,7 @@ const Header = () => {
             {/* Cart */}
             <Link
               href="/cart"
-                  aria-label="Shopping cart"
+              aria-label="Shopping cart"
               className="relative inline-flex h-11 w-11 shrink-0 items-center justify-center text-darkbrown hover:text-pink transition-colors"
             >
               <CartIcon />
@@ -245,7 +278,9 @@ const Header = () => {
         inert={!mobileMenuOpen}
         aria-hidden={!mobileMenuOpen}
         className={`fixed top-0 right-0 h-full w-75 sm:w-90 bg-white z-50 xl:hidden transform transition-transform duration-300 ease-in-out shadow-2xl ${
-          mobileMenuOpen ? "translate-x-0 visible" : "translate-x-full invisible"
+          mobileMenuOpen
+            ? "translate-x-0 visible"
+            : "translate-x-full invisible"
         }`}
       >
         {/* Menu Header */}
@@ -255,7 +290,13 @@ const Header = () => {
             className="outline-none"
             onClick={() => setMobileMenuOpen(false)}
           >
-            <Image src="/images/figma/original/abd5a.png" alt="IcyTales" width={185} height={70} className="h-auto w-32" />
+            <Image
+              src="/images/figma/original/abd5a.png"
+              alt="IcyTales"
+              width={185}
+              height={70}
+              className="h-auto w-32"
+            />
           </Link>
           <button
             onClick={() => setMobileMenuOpen(false)}
@@ -283,7 +324,11 @@ const Header = () => {
           <div className="flex items-center justify-between mb-6">
             {user ? (
               <div className="space-y-1">
-                <Link href="/profile" onClick={()=>setMobileMenuOpen(false)} className="block text-sm font-semibold text-pink">
+                <Link
+                  href="/profile"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block text-sm font-semibold text-pink"
+                >
                   My account
                 </Link>
                 <button
