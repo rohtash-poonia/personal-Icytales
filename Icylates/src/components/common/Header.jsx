@@ -28,7 +28,9 @@ const Header = () => {
   };
 
   const toggleDropdown = (name) => {
-    setOpenDropdown(openDropdown === name ? null : name);
+    setOpenDropdown((currentDropdown) =>
+      currentDropdown === name ? null : name,
+    );
   };
 
   // Close mobile menu on resize to desktop
@@ -110,6 +112,7 @@ const Header = () => {
                     {link.hasDropdown ? (
                       <>
                         <button
+                          type="button"
                           aria-expanded={openDropdown === link.label}
                           onClick={() => toggleDropdown(link.label)}
                           className="flex items-center gap-1 text-[16px] font-medium cursor-pointer transition-colors text-darkbrown hover:text-pink"
@@ -238,6 +241,7 @@ const Header = () => {
 
             {/* Hamburger Button */}
             <button
+              type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="flex flex-col items-center justify-center w-10 h-10 rounded-lg cursor-pointer transition-colors hover:bg-pink/10"
               aria-label="Toggle menu"
@@ -362,6 +366,7 @@ const Header = () => {
                 {link.hasDropdown ? (
                   <>
                     <button
+                      type="button"
                       aria-expanded={openDropdown === link.label}
                       onClick={() => toggleDropdown(link.label)}
                       className="flex items-center justify-between w-full py-3 px-3 rounded-lg text-[16px] font-medium cursor-pointer transition-all text-darkbrown hover:text-pink hover:bg-pink/5"

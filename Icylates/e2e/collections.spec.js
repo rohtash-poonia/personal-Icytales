@@ -1,5 +1,17 @@
 import {expect, test} from '@playwright/test';
 
+test('homepage shows current products and desktop dropdowns open', async ({page}) => {
+  await page.goto('/');
+  await expect(page.getByRole('heading', {level:3}).first()).toBeVisible();
+
+  await page.getByRole('button', {name:'Home', exact:true}).click();
+  await expect(page.getByRole('link', {name:'Home 1', exact:true})).toBeVisible();
+  await page.getByRole('button', {name:'Pages', exact:true}).click();
+  await expect(page.getByRole('link', {name:'Our Team', exact:true})).toBeVisible();
+  await page.getByRole('button', {name:'Blog', exact:true}).click();
+  await expect(page.getByRole('link', {name:'Blog List', exact:true})).toBeVisible();
+});
+
 test('Figma collections load MongoDB products and preserve mobile navigation', async ({page}, testInfo) => {
   await page.goto('/home-2');
   await expect(page.getByRole('heading', {name:'Vegan Ice Cream Delights'})).toBeVisible();
