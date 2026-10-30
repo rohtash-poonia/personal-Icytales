@@ -7,7 +7,11 @@ const API_URL = (
 import {
   getFallbackProduct,
   getFallbackProducts,
-} from "@/data/fallbackProducts";
+} from "../data/fallbackProducts.js";
+const API_TIMEOUT_MS = 45_000;
+const UPLOAD_TIMEOUT_MS = 90_000;
+const API_RETRY_DELAY_MS = 750;
+const MAX_READ_RETRIES = 1;
 let csrfToken;
 let csrfPromise;
 
@@ -38,14 +42,96 @@ async function handleResponse(response) {
   return payload;
 }
 
+function createRequestSignal(externalSignal) {
+  const controller = new AbortController();
+  let timedOut = false;
+  const abort = () => controller.abort(externalSignal.reason);
+  if (externalSignal?.aborted) abort();
+  else externalSignal?.addEventListener("abort", abort, { once: true });
+  const timeoutId = setTimeout(() => {
+    timedOut = true;
+    controller.abort();
+  }, API_TIMEOUT_MS);
+  return {
+    signal: controller.signal,
+    didTimeout: () => timedOut,
+    cleanup: () => {
+      clearTimeout(timeoutId);
+      externalSignal?.removeEventListener("abort", abort);
+    },
+  };
+}
+
+async function fetchPayload(url, options = {}) {
+  const { signal: externalSignal, ...fetchOptions } = options;
+  const request = createRequestSignal(externalSignal);
+  try {
+    const response = await fetch(url, {
+      ...fetchOptions,
+      signal: request.signal,
+    });
+    return await handleResponse(response);
+  } catch (error) {
+    if (request.didTimeout())
+      throw new ApiError(
+        "The server is taking too long to respond. Please try again.",
+        0,
+      );
+    if (externalSignal?.aborted || error instanceof ApiError) throw error;
+    throw new ApiError("Could not reach the server. Please try again.", 0);
+  } finally {
+    request.cleanup();
+  }
+}
+
+function waitForReadRetry(signal) {
+  return new Promise((resolve, reject) => {
+    if (signal?.aborted) {
+      reject(
+        signal.reason || new DOMException("Request cancelled", "AbortError"),
+      );
+      return;
+    }
+    const finish = () => {
+      signal?.removeEventListener("abort", cancel);
+      resolve();
+    };
+    const timer = setTimeout(finish, API_RETRY_DELAY_MS);
+    const cancel = () => {
+      clearTimeout(timer);
+      signal?.removeEventListener("abort", cancel);
+      reject(
+        signal.reason || new DOMException("Request cancelled", "AbortError"),
+      );
+    };
+    signal?.addEventListener("abort", cancel, { once: true });
+  });
+}
+
+function shouldRetryRead(error) {
+  return error?.status === 0 || [502, 503, 504].includes(error?.status);
+}
+
+function logApiFailure(method, path, error) {
+  if (
+    error?.name === "AbortError" ||
+    (error?.status !== 0 && !(error?.status >= 500))
+  )
+    return;
+  const safePath = String(path).split("?")[0];
+  console.warn(`[IcyTales API] ${method} ${safePath} failed`, {
+    status: error?.status || 0,
+    message: error?.message || "Unknown API error",
+  });
+}
+
 async function getCsrfToken() {
   if (csrfToken) return csrfToken;
   if (!csrfPromise) {
-    csrfPromise = fetch(`${API_URL}/api/auth/csrf`, {
+    csrfPromise = fetchPayload(`${API_URL}/api/auth/csrf`, {
       credentials: "include",
       cache: "no-store",
     })
-      .then(handleResponse)
       .then((data) => {
         if (!data?.csrfToken)
           throw new Error("Unable to initialize a secure session.");
@@ -62,6 +148,7 @@ async function getCsrfToken() {
 export async function request(path, options = {}) {
   const method = (options.method || "GET").toUpperCase();
   const mutation = !["GET", "HEAD", "OPTIONS"].includes(method);
+  const { signal, ...requestOptions } = options;
   const headers = new Headers(options.headers);
   const isForm =
     typeof FormData !== "undefined" && options.body instanceof FormData;
@@ -69,24 +156,44 @@ export async function request(path, options = {}) {
     headers.set("Content-Type", "application/json");
   const run = async () => {
     if (mutation) headers.set("X-CSRF-Token", await getCsrfToken());
-    return handleResponse(
-      await fetch(`${API_URL}${path}`, {
-        ...options,
-        method,
-        headers,
-        credentials: "include",
-        cache: "no-store",
-      }),
-    );
+    return fetchPayload(`${API_URL}${path}`, {
+      ...requestOptions,
+      method,
+      headers,
+      credentials: "include",
+      cache: "no-store",
+      signal,
+    });
   };
-  try {
-    return await run();
-  } catch (error) {
-    if (mutation && error.status === 403 && error.code === "CSRF_INVALID") {
-      csrfToken = undefined;
-      return run();
+  let readRetries = 0;
+  let csrfRetries = 0;
+  while (true) {
+    try {
+      return await run();
+    } catch (error) {
+      if (
+        mutation &&
+        csrfRetries === 0 &&
+        error.status === 403 &&
+        error.code === "CSRF_INVALID"
+      ) {
+        csrfToken = undefined;
+        csrfRetries += 1;
+        continue;
+      }
+      if (
+        !mutation &&
+        readRetries < MAX_READ_RETRIES &&
+        !signal?.aborted &&
+        shouldRetryRead(error)
+      ) {
+        readRetries += 1;
+        await waitForReadRetry(signal);
+        continue;
+      }
+      logApiFailure(method, path, error);
+      throw error;
     }
-    throw error;
   }
 }
 export async function requestWithProgress(
@@ -98,6 +205,7 @@ export async function requestWithProgress(
     return new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest();
       xhr.open(method, `${API_URL}${path}`);
+      xhr.timeout = UPLOAD_TIMEOUT_MS;
       xhr.withCredentials = true;
       xhr.setRequestHeader("X-CSRF-Token", token);
       xhr.upload.onprogress = (event) => {
@@ -106,6 +214,8 @@ export async function requestWithProgress(
       };
       xhr.onerror = () =>
         reject(new ApiError("The upload could not reach the server.", 0));
+      xhr.ontimeout = () =>
+        reject(new ApiError("The upload timed out. Please try again.", 0));
       xhr.onload = () => {
         let payload = null;
         try {
@@ -130,6 +240,7 @@ export async function requestWithProgress(
       csrfToken = undefined;
       return run();
     }
+    logApiFailure(method, path, error);
     throw error;
   }
 }

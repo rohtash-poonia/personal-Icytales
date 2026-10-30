@@ -11,6 +11,8 @@ services:
         value: production
       - key: TRUST_PROXY
         value: "1"
+      - key: COOKIE_SAME_SITE
+        value: none
       - key: MONGO_URI
         sync: false
       - key: JWT_SECRET

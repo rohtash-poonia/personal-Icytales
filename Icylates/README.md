@@ -5,11 +5,11 @@ Next.js 16 App Router storefront and administrator interface for the IcyTales ca
 ## Local setup
 
 1. Install dependencies with `npm ci`.
-2. Copy `.env.example` to `.env.local` and set the API origin.
+2. Copy `.env.example` to `.env.local`. The local API origin defaults to `http://localhost:5000`.
 3. Start the Express backend, then run `npm run dev`.
 4. Open http://localhost:3000.
 
-Browser API calls use `NEXT_PUBLIC_API_URL` when supplied. Leaving it empty uses same-origin `/api`; the Next server proxies those requests to `API_PROXY_URL` (default http://127.0.0.1:5000).
+Browser API calls use `NEXT_PUBLIC_API_URL`. Set it to `https://personal-icytales.onrender.com` for Vercel Production and Preview deployments. The server-side Next.js rewrite uses `API_PROXY_URL`, which should also point to the Render HTTPS URL in Vercel; its development default is `http://127.0.0.1:5000`.
 
 ## Verification
 
