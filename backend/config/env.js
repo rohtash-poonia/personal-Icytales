@@ -9,8 +9,7 @@ function getOrigins(env = process.env) {
     : env.NODE_ENV === "production"
       ? []
       : ["http://localhost:3000", "http://localhost:3001"];
-  if (env.NODE_ENV === "production")
-    origins.push("https://personal-icytales.vercel.app");
+  origins.push("https://personal-icytales.vercel.app");
   return [...new Set(origins)];
 }
 function validateEnv(env = process.env) {
