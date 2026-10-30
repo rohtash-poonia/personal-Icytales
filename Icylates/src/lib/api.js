@@ -1,4 +1,9 @@
-const API_URL = (process.env.NEXT_PUBLIC_API_URL || "").replace(/\/$/, "");
+const API_URL = (
+  process.env.NEXT_PUBLIC_API_URL ||
+  (process.env.NODE_ENV === "production"
+    ? "https://personal-icytales.onrender.com"
+    : "")
+).replace(/\/$/, "");
 import {
   getFallbackProduct,
   getFallbackProducts,
