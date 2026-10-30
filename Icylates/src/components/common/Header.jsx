@@ -14,6 +14,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [authError, setAuthError] = useState("");
   const menuRef = useRef(null);
+  const mobileMenuRef = useRef(null);
   const { user, logout } = useAuth();
   const { cartItems } = useCart();
   const cartCount = cartItems.reduce((total, item) => total + item.qty, 0);
@@ -60,7 +61,10 @@ const Header = () => {
   // Close dropdown on outside click
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (menuRef.current && !menuRef.current.contains(e.target)) {
+      if (
+        !menuRef.current?.contains(e.target) &&
+        !mobileMenuRef.current?.contains(e.target)
+      ) {
         setOpenDropdown(null);
       }
     };
@@ -279,6 +283,7 @@ const Header = () => {
       {/* ========== MOBILE/TABLET SLIDE-IN MENU ========== */}
       <div
         id="mobile-navigation"
+        ref={mobileMenuRef}
         inert={!mobileMenuOpen}
         aria-hidden={!mobileMenuOpen}
         className={`fixed top-0 right-0 h-full w-75 sm:w-90 bg-white z-50 xl:hidden transform transition-transform duration-300 ease-in-out shadow-2xl ${
@@ -389,9 +394,11 @@ const Header = () => {
                       </svg>
                     </button>
                     <div
+                      aria-hidden={openDropdown !== link.label}
+                      inert={openDropdown !== link.label}
                       className={`overflow-hidden transition-all duration-300 ${
                         openDropdown === link.label
-                          ? "max-h-60 opacity-100"
+                          ? "max-h-[32rem] opacity-100"
                           : "max-h-0 opacity-0"
                       }`}
                     >
