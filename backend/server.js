@@ -1,5 +1,6 @@
 const path = require("node:path");
 require("dotenv").config({ path: path.join(__dirname, ".env") });
+if (process.env.RENDER === "true") process.env.NODE_ENV = "production";
 const { validateEnv } = require("./config/env");
 const connectDB = require("./config/db");
 const { createApp } = require("./app");
