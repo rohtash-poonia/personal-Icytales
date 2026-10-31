@@ -18,4 +18,4 @@ services:
       - key: JWT_SECRET
         sync: false
       - key: CLIENT_ORIGINS
-        sync: false
+        value: https://personal-icytales.vercel.app
