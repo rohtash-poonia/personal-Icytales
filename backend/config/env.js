@@ -1,14 +1,40 @@
 const { httpError } = require("../utils/validation");
+function isProduction(env = process.env) {
+  return env.NODE_ENV === "production" || env.RENDER === "true";
+}
+function normalizeOrigin(origin) {
+  try {
+    const url = new URL(origin);
+    if (
+      ["http:", "https:"].includes(url.protocol) &&
+      !url.username &&
+      !url.password &&
+      url.pathname === "/" &&
+      !url.search &&
+      !url.hash
+    )
+      return url.origin;
+  } catch {}
+  return origin;
+}
 function getOrigins(env = process.env) {
+  const production = isProduction(env);
   const value = env.CLIENT_ORIGINS || env.FRONTEND_URL || env.CLIENT_URL;
-  const origins = value
-    ? value
-        .split(",")
-        .map((origin) => origin.trim())
-        .filter(Boolean)
-    : env.NODE_ENV === "production"
+  const configuredOrigins = value
+    ? value.split(",").map((origin) => origin.trim()).filter(Boolean)
+    : production
       ? []
       : ["http://localhost:3000", "http://localhost:3001"];
+  const origins = configuredOrigins
+    .map(normalizeOrigin)
+    .filter((origin) => {
+      if (!production) return true;
+      try {
+        return new URL(origin).protocol !== "http:";
+      } catch {
+        return true;
+      }
+    });
   origins.push("https://personal-icytales.vercel.app");
   return [...new Set(origins)];
 }
@@ -35,7 +61,7 @@ function validateEnv(env = process.env) {
       if (
         url.origin !== origin ||
         !["http:", "https:"].includes(url.protocol) ||
-        (env.NODE_ENV === "production" && url.protocol !== "https:")
+        (isProduction(env) && url.protocol !== "https:")
       )
         throw new Error();
     } catch {
@@ -50,7 +76,7 @@ function validateEnv(env = process.env) {
     !["lax", "strict", "none"].includes(env.COOKIE_SAME_SITE)
   )
     errors.push("COOKIE_SAME_SITE must be lax, strict or none");
-  if (env.COOKIE_SAME_SITE === "none" && env.NODE_ENV !== "production")
+  if (env.COOKIE_SAME_SITE === "none" && !isProduction(env))
     errors.push("SameSite=none requires HTTPS production cookies");
   if (
     env.PORT &&
@@ -80,10 +106,10 @@ function validateEnv(env = process.env) {
 function cookieOptions() {
   return {
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
+    secure: isProduction(process.env),
     sameSite:
       process.env.COOKIE_SAME_SITE ||
-      (process.env.NODE_ENV === "production" ? "none" : "lax"),
+      (isProduction(process.env) ? "none" : "lax"),
     path: "/",
   };
 }
